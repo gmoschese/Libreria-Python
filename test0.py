@@ -14,23 +14,27 @@ domanda3="cosa studi?"
 domanda4="Dove"
 
 risposta1= input(domanda1)
-if(domanda1 and risposta1.lower() == ListOfAllowedAnsware[0].lower()):
+if(risposta1 and risposta1.lower() == ListOfAllowedAnsware[0].lower()):
     print(risposta1)
     ListOfAnsware.append(risposta1)
 
 risposta2= input(domanda2)
-if(domanda2 and int(risposta2) >= int(ListOfAllowedAnsware[1])):
+if(risposta2 and int(risposta2) >= int(ListOfAllowedAnsware[1])):
     print(risposta2)
     ListOfAnsware.append(risposta2)
 
 risposta3= input(domanda3)
-if(domanda3 and risposta3.lower() == ListOfAllowedAnsware[2].lower()):
+if(risposta3 and risposta3.lower() == ListOfAllowedAnsware[2].lower()):
     print(risposta3)
     ListOfAnsware.append(risposta3)
 
 risposta4= input(domanda4)
-if(domanda4 and risposta4.lower() == ListOfAllowedAnsware[3].lower()):
+if(risposta4 and risposta4.lower() == ListOfAllowedAnsware[3].lower()):
     print(risposta4)
     ListOfAnsware.append(risposta4)
 
 print(ListOfAnsware)
+
+
+
+#Metodo alternativo:
