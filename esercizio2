@@ -1,32 +1,31 @@
 class MyDict:
-    def __init__(self):
-        __dizionario = {}
-        
+    __dizionario = {}
 
     def setDizionario(self, chiave, valore):
-        self.__dizionario.update({chiave: valore})
+        MyDict.__dizionario.update({chiave: valore})
 
     def getDizionario(self, chiave):
-        self.__dizionario[chiave]
+        MyDict.__dizionario[chiave]
 
 class Riempitore(MyDict):
-    def __init__(self, padreL):
-        self.padre = padreL
+    def __init__(self):
+        pass
 
     def setValoreDizionario(self, chiave, valore):
-        self.padre.setDizionario(self, chiave, valore)
+        MyDict.setDizionario(self, chiave, valore)
 
 class Espositore(MyDict):
-    def __init__(self, padreL):
-        self.padre = padreL
+    def __init__(self):
+        pass
 
     def getVoloreDizionario(self, chiave):
-        self.padre.getDizionario(chiave)
+        MyDict.getDizionario(self, chiave)
     
 def __main3__():
-    dizionario = MyDict()
     riempitore = Riempitore()
     espositore = Espositore()
     for i in range(10):
         riempitore.setValoreDizionario("casa", "dolce")
         print(espositore.getVoloreDizionario("casa"))
+
+__main3__()
